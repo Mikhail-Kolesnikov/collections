@@ -16,40 +16,36 @@ public class HomeworkKornReaktor {
 
 
             double sum = grad.get(0);
-            grad.add(sum);
+//            grad.add(sum);
 
 
             for (int i = 0; i < grad.size(); i++) {
+
                 sum += grad.get(i);
 
             }
-            grad.add(sum);
+//            grad.add(sum);
             double average = sum / grad.size();
-            grad.add(average);
+//            grad.add(average);
 
             System.out.println(average);
 
             double startTemp = average;
             double lastTemp = gradInReactor;
             double res = startTemp - lastTemp;
-            grad.add(res);
+//            grad.add(res);
             System.out.println(res);
-
 
 
             for (int i = 0; i < grad.size(); i++) {
 
 
-                if ((lastTemp + (lastTemp * 0.1)) > startTemp && ((lastTemp + (lastTemp * 0.2))>(lastTemp-1))) {
+                if ((lastTemp + (lastTemp * 0.1)) > startTemp && ((lastTemp + (lastTemp * 0.2)) > (lastTemp - 1))) {
                     System.out.println("Тревога, превышение температуры");
 
 
                 }
             }
-
-
-
-
 
 
         }
